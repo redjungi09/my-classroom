@@ -1,0 +1,10 @@
+{
+  "name": "first-success",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "내 문장을 친구 화면에 띄우는 첫 실습",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}

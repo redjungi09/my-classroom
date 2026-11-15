@@ -1,0 +1,18 @@
+{
+  // Codespace가 이 파일을 읽고 컴퓨터를 준비합니다.
+  "name": "내 교실",
+
+  // Node.js 24가 설치된 리눅스에서 시작합니다.
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+
+  // 처음 만들어질 때 한 번, 필요한 패키지를 설치합니다.
+  "postCreateCommand": "npm ci",
+
+  // 이 번호의 서버가 켜지면 브라우저에서 열 수 있는 주소를 만들어 줍니다.
+  "forwardPorts": [3000, 8080],
+  "portsAttributes": {
+    "3000": { "label": "내 교실 앱" },
+    // 실습 서버는 내 교실 화면에서 확인하므로, 켜질 때 알림 창을 띄우지 않습니다.
+    "8080": { "label": "실습 서버", "onAutoForward": "silent" }
+  }
+}

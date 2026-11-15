@@ -1,0 +1,13 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+.DS_Store
+
+# 비밀 값은 저장소에 올리지 않습니다.
+.env*
+!.env.example
+.vercel
+
+# 연습용 DB 파일은 각자의 컴퓨터에만 둡니다.
+data/
