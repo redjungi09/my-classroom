@@ -19,6 +19,7 @@ https://raw.githubusercontent.com/almaden-almaden/classroom-starter/main/START.m
 바꿀 때마다 한 줄씩 적습니다. 무엇을 바꿨고 어디에서 확인했는지 씁니다.
 
 - 교실 이름과 짙은 초록 색, AI 도우미 말투를 정함. 홈 화면과 사이드바에서 확인.
+- 밝은/어두운 테마 전환 버튼 추가. 화면 위쪽 오른쪽 달·해 버튼을 눌러 확인.
 
 ## 준비 상태
 

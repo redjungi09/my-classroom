@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { AppSidebar } from '@/components/app-sidebar';
 import { ChatButton } from '@/components/chat-button';
+import { ThemeButton } from '@/components/theme-button';
 import { SidebarInset, SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { site, whereAmI, whoAmI } from '@/lib/site';
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <header className="flex h-12 items-center gap-2 border-b px-4">
                 <SidebarTrigger />
                 <span className="text-sm text-muted-foreground">{site.owner}</span>
+                <ThemeButton />
               </header>
               <div className="mx-auto w-full max-w-3xl p-6">{children}</div>
             </SidebarInset>
