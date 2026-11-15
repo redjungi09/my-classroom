@@ -20,6 +20,9 @@ export const menu = [
     title: '인증',
     icon: KeyRound,
     summary: '가입과 로그인을 해 보고, 그때 무엇이 저장되는지 봅니다.',
-    items: [{ title: '가입과 로그인', href: '/auth' }],
+    items: [
+      { title: '가입과 로그인', href: '/auth' },
+      { title: '내 할 일 (로그인 필요)', href: '/todos' },
+    ],
   },
 ];

@@ -1,0 +1,10 @@
+{
+  "name": "tcp-http",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "TCP 소켓으로 HTTP 응답을 직접 적어 보내는 실습",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}

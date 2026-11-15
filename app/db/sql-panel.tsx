@@ -19,6 +19,14 @@ const examples = [
     label: '두 표 이어 보기',
     sql: 'SELECT lessons.title, todos.text, todos.done\nFROM todos\nJOIN lessons ON lessons.id = todos.lesson_id;',
   },
+  // 레드준기가 추가한 예시입니다.
+  { label: '할 일 끝내기', sql: 'UPDATE todos SET done = 1 WHERE id = 2;' },
+  {
+    label: '수업별 할 일 수',
+    sql: 'SELECT lessons.title, COUNT(todos.id) AS 할일수\nFROM lessons\nLEFT JOIN todos ON todos.lesson_id = lessons.id\nGROUP BY lessons.id;',
+  },
+  { label: '끝낸 할 일 지우기', sql: 'DELETE FROM todos WHERE done = 1;' },
+  { label: '잘못된 done 값', sql: "INSERT INTO todos (lesson_id, text, done) VALUES (1, '반쯤 끝냄', 2);" },
 ];
 
 const box = 'rounded-lg border bg-muted p-3 font-mono text-sm break-all whitespace-pre-wrap';
